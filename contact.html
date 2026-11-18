@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – Nama Kamu</title>
+<meta name="description" content="Portofolio pribadi Nama Kamu.">
+<script>(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body class="">
+<div class="blob b1"></div><div class="blob b2"></div>
+<header class="nav">
+<a href="index.html" class="logo"><i data-lucide="sparkles"></i> Nama Kamu</a>
+<nav id="menu"><a href="index.html"><i data-lucide="home"></i>Home</a><a href="about.html"><i data-lucide="user"></i>About</a><a href="skills.html"><i data-lucide="code-2"></i>Skills</a><a href="projects.html"><i data-lucide="folder-kanban"></i>Project</a><a href="education.html"><i data-lucide="graduation-cap"></i>Pendidikan</a><a href="contact.html" class="active"><i data-lucide="mail"></i>Contact</a></nav>
+<div class="tools">
+<button class="icon-btn" id="themeBtn" aria-label="Ganti tema terang/gelap"><i data-lucide="moon"></i></button>
+<button class="icon-btn menu-btn" id="menuBtn" aria-label="Buka menu"><i data-lucide="menu"></i></button>
+</div>
+</header>
+<main>
+<section class="sec"><div class="page-head"><span class="chip"><i data-lucide="mail"></i>Kontak</span><h1>Ayo ngobrol</h1><p>Ada pertanyaan atau ingin berkolaborasi? Kirim pesan, saya senang membalasnya.</p></div>
+<div class="grid two"><div class="card reveal info">
+<a href="mailto:email@contoh.com"><i data-lucide="mail"></i>email@contoh.com</a>
+<a href="https://github.com/aazzraaa" target="_blank" rel="noopener"><i data-lucide="github"></i>github.com/aazzraaa</a>
+<a href="https://instagram.com/arly_ayyaza" target="_blank" rel="noopener"><i data-lucide="instagram"></i>@arly_ayyaza</a>
+<span><i data-lucide="map-pin"></i>Magetan, Jawa Timur</span></div>
+<div class="card reveal"><div class="form">
+<label>Nama<input type="text" id="fName" placeholder="Nama kamu"></label>
+<label>Email<input type="email" id="fEmail" placeholder="nama@email.com"></label>
+<label>Pesan<textarea id="fMsg" rows="4" placeholder="Tulis pesanmu"></textarea></label>
+<button class="btn primary" id="sendBtn"><i data-lucide="send"></i>Kirim pesan</button></div></div></div></section>
+</main>
+<footer>Dibuat dengan <i data-lucide="heart"></i> oleh Nama Kamu · <span id="year"></span></footer>
+<div class="toast" id="toast"></div>
+<button class="to-top" id="toTop" aria-label="Kembali ke atas"><i data-lucide="arrow-up"></i></button>
+</body>
+</html>

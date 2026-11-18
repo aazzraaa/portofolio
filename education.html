@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pendidikan – Arly Yulia Az Zahra</title>
+
+    <meta name="description" content="Riwayat pendidikan Arly Yulia Az Zahra, siswi SMK PGRI 2 Ponorogo jurusan Rekayasa Perangkat Lunak.">
+
+    <!-- THEME PREFERENCE -->
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme') ||
+                    (matchMedia('(prefers-color-scheme: dark)').matches
+                    ? 'dark' : 'light');
+
+                document.documentElement.dataset.theme = theme;
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BACKGROUND DECORATION -->
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+
+    <!-- NAVBAR -->
+    <header class="nav">
+
+        <a href="index.html" class="logo">
+            <i data-lucide="sparkles"></i>
+            Arly Yulia Az Zahra
+        </a>
+
+        <nav id="menu">
+
+            <a href="index.html">
+                <i data-lucide="home"></i>
+                Home
+            </a>
+
+            <a href="about.html">
+                <i data-lucide="user"></i>
+                About
+            </a>
+
+            <a href="skills.html">
+                <i data-lucide="code-2"></i>
+                Skills
+            </a>
+
+            <a href="projects.html">
+                <i data-lucide="folder-kanban"></i>
+                Project
+            </a>
+
+            <a href="education.html" class="active">
+                <i data-lucide="graduation-cap"></i>
+                Pendidikan
+            </a>
+
+            <a href="contact.html">
+                <i data-lucide="mail"></i>
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="tools">
+
+            <button
+                class="icon-btn"
+                id="themeBtn"
+                aria-label="Ganti tema terang atau gelap"
+            >
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button
+                class="icon-btn menu-btn"
+                id="menuBtn"
+                aria-label="Buka menu"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section class="sec">
+
+            <!-- PAGE HEADING -->
+            <div class="page-head">
+
+                <span class="chip">
+                    <i data-lucide="graduation-cap"></i>
+                    Riwayat Belajar
+                </span>
+
+                <h1>My Education</h1>
+
+                <p>
+                    Perjalanan pendidikan dan pengalaman belajar
+                    saya dari awal hingga sekarang.
+                </p>
+
+            </div>
+
+            <!-- EDUCATION TIMELINE -->
+            <ol class="timeline zig">
+
+                <!-- =========================
+                     SMK
+                ========================== -->
+
+                <li class="reveal">
+
+                    <i data-lucide="school"></i>
+
+                    <div class="card">
+
+                        <span class="chip">
+                            <i data-lucide="graduation-cap"></i>
+                            Pendidikan Saat Ini
+                        </span>
+
+                        <h3>SMK PGRI 2 Ponorogo</h3>
+
+                        <small>2024 – Sekarang</small>
+
+                        <p>
+                            Jurusan Rekayasa Perangkat Lunak (RPL),
+                            kelas XII RPL 1.
+                        </p>
+
+                        <p>
+                            Mempelajari pengembangan aplikasi dan website,
+                            pemrograman, pengelolaan database,
+                            serta perancangan antarmuka pengguna.
+                        </p>
+
+                        <div class="tags">
+                            <span>Software Engineering</span>
+                            <span>Web Development</span>
+                            <span>Programming</span>
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <!-- =========================
+                     SMP
+                ========================== -->
+
+                <li class="reveal">
+
+                    <i data-lucide="book-open"></i>
+
+                    <div class="card">
+
+                        <h3>MTSN 3 PONOROGO</h3>
+
+                        <small>2021 – 2024</small>
+
+                        <p>
+                            MTSN 3 PONOROGO,
+                           Menempuh pendidikan menengah pertama dengan mempelajari berbagai bidang ilmu, 
+                           mengembangkan kemampuan diri, serta membangun dasar pengetahuan dan pengalaman sebagai 
+                           bekal untuk melanjutkan pendidikan ke jenjang berikutnya.
+                        </p>
+
+                    </div>
+
+                </li>
+
+                <!-- =========================
+                     SD
+                ========================== -->
+
+                <li class="reveal">
+
+                    <i data-lucide="pencil"></i>
+
+                    <div class="card">
+
+                        <h3>SDN DUKUH 1</h3>
+
+                        <small>2015 – 2021</small>
+
+                        <p>
+                            Pendidikan dasar sebagai awal
+                            perjalanan belajar dan mengembangkan
+                            kemampuan diri.
+                        </p>
+
+                    </div>
+
+                </li>
+
+            </ol>
+
+            <!-- CERTIFICATES -->
+            <h2 class="sub">
+                <i data-lucide="award"></i>
+                Sertifikat & Kursus
+            </h2>
+
+            <div class="grid three">
+
+                <!-- CERTIFICATE 1 -->
+                <div class="card reveal cert">
+
+                    <i data-lucide="award"></i>
+
+                    <h3>Magang PKL</h3>
+
+                    <small>2025-2026</small>
+
+                    <p>
+                        Menjadi programmer full stack
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 2 -->
+                <div class="card reveal cert">
+
+                    <i data-lucide="code-2"></i>
+
+                    <h3>Mengikuti Seminar Nasional Hibrid</h3>
+
+                    <small>2026</small>
+
+                    <p>
+                       Mendengarkan seminar tentang pengembangan diri
+                    </p>
+
+                </div>
+
+                <!-- CERTIFICATE 3 -->
+                <div class="card reveal cert">
+
+                    <i data-lucide="git-branch"></i>
+
+                    <h3>Pengenalan Git</h3>
+
+                    <small>2026</small>
+
+                    <p>
+                        Mempelajari pengelolaan versi
+                        project menggunakan Git dan GitHub.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        Dibuat dengan
+        <i data-lucide="heart"></i>
+        oleh Arly Yulia Az Zahra
+
+        ·
+
+        <span id="year"></span>
+
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <!-- BACK TO TOP -->
+    <button
+        class="to-top"
+        id="toTop"
+        aria-label="Kembali ke atas"
+    >
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills – Nama Kamu</title>
+<meta name="description" content="Portofolio pribadi Nama Kamu.">
+<script>(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body class="">
+<div class="blob b1"></div><div class="blob b2"></div>
+<header class="nav">
+<a href="index.html" class="logo"><i data-lucide="sparkles"></i> Arly Yulia Az Zahra</a>
+<nav id="menu"><a href="index.html"><i data-lucide="home"></i>Home</a><a href="about.html"><i data-lucide="user"></i>About</a><a href="skills.html" class="active"><i data-lucide="code-2"></i>Skills</a><a href="projects.html"><i data-lucide="folder-kanban"></i>Project</a><a href="education.html"><i data-lucide="graduation-cap"></i>Pendidikan</a><a href="contact.html"><i data-lucide="mail"></i>Contact</a></nav>
+<div class="tools">
+<button class="icon-btn" id="themeBtn" aria-label="Ganti tema terang/gelap"><i data-lucide="moon"></i></button>
+<button class="icon-btn menu-btn" id="menuBtn" aria-label="Buka menu"><i data-lucide="menu"></i></button>
+</div>
+</header>
+<main>
+<section class="sec"><div class="page-head"><span class="chip"><i data-lucide="code-2"></i>Kemampuan</span><h1>Skill yang saya pelajari</h1><p>Pilih kategori untuk melihat skill tertentu.</p></div>
+<div class="filters"><button class="active" data-filter="all">Semua</button><button data-filter="frontend">Frontend</button><button data-filter="tools">Tools</button><button data-filter="soft">Soft skill</button></div>
+<div class="grid three" id="items"><div class="card reveal skill" data-cat="frontend"><i data-lucide="file-code-2"></i><h3>HTML</h3><div class="bar"><i data-w="90"></i></div><small>90%</small></div><div class="card reveal skill" data-cat="frontend"><i data-lucide="paintbrush"></i><h3>CSS</h3><div class="bar"><i data-w="80"></i></div><small>80%</small></div><div class="card reveal skill" data-cat="frontend"><i data-lucide="braces"></i><h3>JavaScript</h3><div class="bar"><i data-w="65"></i></div><small>65%</small></div><div class="card reveal skill" data-cat="tools"><i data-lucide="git-branch"></i><h3>Git &amp; GitHub</h3><div class="bar"><i data-w="70"></i></div><small>70%</small></div><div class="card reveal skill" data-cat="tools"><i data-lucide="figma"></i><h3>Desain UI</h3><div class="bar"><i data-w="60"></i></div><small>60%</small></div><div class="card reveal skill" data-cat="tools"><i data-lucide="terminal"></i><h3>VS Code</h3><div class="bar"><i data-w="85"></i></div><small>85%</small></div><div class="card reveal skill" data-cat="soft"><i data-lucide="users"></i><h3>Kerja Tim</h3><div class="bar"><i data-w="85"></i></div><small>85%</small></div><div class="card reveal skill" data-cat="soft"><i data-lucide="lightbulb"></i><h3>Problem Solving</h3><div class="bar"><i data-w="75"></i></div><small>75%</small></div></div></section>
+</main>
+<footer>Dibuat dengan <i data-lucide="heart"></i> oleh Arly Yulia Az Zahra · <span id="year"></span></footer>
+<div class="toast" id="toast"></div>
+<button class="to-top" id="toTop" aria-label="Kembali ke atas"><i data-lucide="arrow-up"></i></button>
+</body>
+</html>

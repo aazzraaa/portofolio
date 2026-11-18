@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Projects – Arly Yulia Az Zahra</title>
+
+    <meta name="description" content="Kumpulan project dan karya Arly Yulia Az Zahra dalam bidang pengembangan website dan aplikasi.">
+
+    <!-- THEME PREFERENCE -->
+    <script>
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme') ||
+                    (matchMedia('(prefers-color-scheme: dark)').matches
+                    ? 'dark' : 'light');
+
+                document.documentElement.dataset.theme = theme;
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BACKGROUND DECORATION -->
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+
+    <!-- NAVBAR -->
+    <header class="nav">
+
+        <a href="index.html" class="logo">
+            <i data-lucide="sparkles"></i>
+            Arly Yulia Az Zahra
+        </a>
+
+        <nav id="menu">
+
+            <a href="index.html">
+                <i data-lucide="home"></i>
+                Home
+            </a>
+
+            <a href="about.html">
+                <i data-lucide="user"></i>
+                About
+            </a>
+
+            <a href="skills.html">
+                <i data-lucide="code-2"></i>
+                Skills
+            </a>
+
+            <a href="projects.html" class="active">
+                <i data-lucide="folder-kanban"></i>
+                Project
+            </a>
+
+            <a href="education.html">
+                <i data-lucide="graduation-cap"></i>
+                Pendidikan
+            </a>
+
+            <a href="contact.html">
+                <i data-lucide="mail"></i>
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="tools">
+
+            <button
+                class="icon-btn"
+                id="themeBtn"
+                aria-label="Ganti tema terang atau gelap"
+            >
+                <i data-lucide="moon"></i>
+            </button>
+
+            <button
+                class="icon-btn menu-btn"
+                id="menuBtn"
+                aria-label="Buka menu"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section class="sec">
+
+            <!-- PAGE HEADING -->
+            <div class="page-head">
+
+                <span class="chip">
+                    <i data-lucide="folder-kanban"></i>
+                    My Creative Work
+                </span>
+
+                <h1>My Projects</h1>
+
+                <p>
+                    Kumpulan karya, project, dan aplikasi
+                    yang saya kembangkan selama belajar.
+                </p>
+
+            </div>
+
+            <!-- PROJECT FILTER -->
+            <div class="filters">
+
+                <button class="active" data-filter="all">
+                    Semua
+                </button>
+
+                <button data-filter="web">
+                    Website
+                </button>
+
+                <button data-filter="app">
+                    Aplikasi
+                </button>
+
+            </div>
+
+            <!-- PROJECT LIST -->
+            <div class="grid two" id="items">
+
+                <!-- PROJECT 1 -->
+                <article class="card reveal project" data-cat="web">
+
+                    <div class="thumb t1">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+
+                    <span class="project-label">
+                        WEB APPLICATION
+                    </span>
+
+                    <h3>Login & Hak Akses</h3>
+
+                    <p>
+                        Website autentikasi pengguna dengan
+                        sistem login dan pembagian hak akses
+                        berdasarkan role Admin, Petugas, dan Siswa.
+                    </p>
+
+                    <div class="tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/aazzraaa/login_hakakses.git"
+                            class="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="github"></i>
+                            Source Code
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="card reveal project" data-cat="app">
+
+                    <div class="thumb t2">
+                        <i data-lucide="library-big"></i>
+                    </div>
+
+                    <span class="project-label">
+                        WEB APPLICATION
+                    </span>
+
+                    <h3>Perpustakaan Digital</h3>
+
+                    <p>
+                        Aplikasi pengelolaan perpustakaan
+                        untuk mengatur data buku, anggota,
+                        serta aktivitas peminjaman.
+                    </p>
+
+                    <div class="tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Composer</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/aazzraaa/perpus_api.git"
+                            class="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="github"></i>
+                            Source Code
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 3 -->
+                <article class="card reveal project" data-cat="app">
+
+                    <div class="thumb t3">
+                        <i data-lucide="package"></i>
+                    </div>
+
+                    <span class="project-label">
+                        MANAGEMENT SYSTEM
+                    </span>
+
+                    <h3>APP MART</h3>
+
+                    <p>
+                        Sistem pengelolaan inventaris dan
+                        peminjaman alat dengan fitur
+                        pengelolaan pengguna dan data barang.
+                    </p>
+
+                    <div class="tags">
+                        <span>Laravel</span>
+                        <span>Tailwind CSS</span>
+                        <span>HTML, CSS, JavaScript</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/aazzraaa/app_mart2.git"
+                            class="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="github"></i>
+                            Source Code
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 4 -->
+                <article class="card reveal project" data-cat="web">
+
+                    <div class="thumb t1">
+                        <i data-lucide="flower-2"></i>
+                    </div>
+
+                    <span class="project-label">
+                        
+                    </span>
+
+                    <h3>Parkir</h3>
+
+                    <p>
+                        Konsep website pemesanan buket bunga
+                        dengan katalog produk, kategori,
+                        pemesanan, dan informasi transaksi.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/aazzraaa/parkir-arly.git"
+                            class="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="github"></i>
+                            Source Code
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 5 -->
+                <article class="card reveal project" data-cat="web">
+
+                    <div class="thumb t2">
+                        <i data-lucide="shopping-bag"></i>
+                    </div>
+
+                    <span class="project-label">
+                        WEB APPLICATION
+                    </span>
+
+                    <h3>TokoKita</h3>
+
+                    <p>
+                        Website toko sederhana untuk
+                        mengelola data pelanggan, transaksi,
+                        dan laporan penjualan.
+                    </p>
+
+                    <div class="tags">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>Database</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/aazzraaa/tokokita.git"
+                            class="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="github"></i>
+                            Source Code
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 6 -->
+                <article class="card reveal project" data-cat="web">
+
+                    <div class="thumb t3">
+                        <i data-lucide="briefcase-business"></i>
+                    </div>
+
+                    <span class="project-label">
+                        PERSONAL WEBSITE
+                    </span>
+
+                    <h3>Rental Mobil</h3>
+
+                    <p>
+                        Website portofolio pribadi yang
+                        menampilkan profil, kemampuan,
+                        pendidikan, dan hasil project.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a
+                            href="https://github.com/aazzraaa/rentalmobil_rpl1.git"
+                            class="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="github"></i>
+                            Source Code
+                        </a>
+
+                        <a
+                            href="index.html"
+                            class="link"
+                        >
+                            <i data-lucide="external-link"></i>
+                            Live Demo
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- BOTTOM NOTE -->
+            <div class="projects-note reveal">
+
+                <i data-lucide="lightbulb"></i>
+
+                <div>
+                    <h3>Always Learning, Always Creating</h3>
+
+                    <p>
+                        Setiap project merupakan bagian dari
+                        proses belajar, mencoba hal baru,
+                        dan mengembangkan kemampuan saya.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        Dibuat dengan
+        <i data-lucide="heart"></i>
+        oleh Arly Yulia Az Zahra
+
+        ·
+
+        <span id="year"></span>
+
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <!-- BACK TO TOP -->
+    <button
+        class="to-top"
+        id="toTop"
+        aria-label="Kembali ke atas"
+    >
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+</body>
+</html>
